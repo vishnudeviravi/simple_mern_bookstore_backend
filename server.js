@@ -7,7 +7,6 @@ require('dotenv').config('./.env');
 require('./db');
 
 const app = express();
-
 //middlewares
 app.use(cors());
 app.use(express.json());

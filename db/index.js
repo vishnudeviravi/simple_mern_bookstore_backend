@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect(`mongodb://localhost:27017/${process.env.DEV_DB}`)
+  .connect(process.env.DB)
   .then(() => {
     console.log('DB connected');
   })

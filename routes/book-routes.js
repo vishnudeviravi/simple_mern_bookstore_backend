@@ -35,6 +35,7 @@ router.get('/book', async (req, res) => {
 
     return res.status(200).json(dbResponse);
   } catch (e) {
+    console.log(e);
     return res.status(500).json({ message: e.message, error: true });
   }
 });
